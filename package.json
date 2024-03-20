@@ -1,0 +1,29 @@
+{
+  "name": "ultimateqaautomation",
+  "version": "1.0.0",
+  "description": "CypressAutomationTemplate for API and E2E UI testing",
+  "main": "index.js",
+  "scripts": {
+    "test-headless": "cypress run --headless --browser chrome --spec cypress/e2e/**",
+    "test-headless2": "cypress run --browser=chrome",
+    "test": "cypress open"
+  },
+  "keywords": [
+    "cypress",
+    "api_testing",
+    "e2e_testing",
+    "xpath"
+  ],
+  "author": "Thanh Thao",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "ajv": "^8.12.0",
+    "cypress": "^12.17.4",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "cypress-real-events": "^1.12.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.2",
+    "typescript": "^4.9.5"
+  }
+}
