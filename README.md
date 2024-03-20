@@ -15,7 +15,7 @@ npm init
 {
   "name": "ultimateqaautomation",
   "version": "1.0.0",
-  "description": "CypressCucumberAutomationTemplate",
+  "description": "CypressAutomationE2E",
   "main": "index.js",
   "scripts": {
     "test": "cypress open"
@@ -72,21 +72,15 @@ Importance note: add the code  into tsconfig.json:
 ## 10. Page oject model setup:
 Create file Selector as pages
 ```javascript
-const LoginPage = {
+export const AutomationPage = {
   //elements input here:
-  username: "",
+  title: "",
   ....
 }
-export default LoginPage
-```
-Insert the code into .cy.ts file:
-```javascript
-import apiLoginPage from "../pages/apiLoginPage";
+
 ```
 ## 11. How to use Fixture file connection:
-Insert the code into .cy.ts file
-```javascript
-const apittesingdatajson = require("../../fixtures/apitesting")
+
 ```
 ```javascript
 ProjectRoot
@@ -121,13 +115,8 @@ Options commands:
 npm install @bahmutov/cypress-esbuild-preprocessor --save-dev
 ```
 ```javascript
-npm install esbuild --save-dev
-```
-## 14. Schemas install setup - chai assertion library along with the ajv package
+## 13. Run test report: 
 ```javascript
-npm install ajv --save-dev
-```
-## 15. Use CSV file
-```javascript
-npm install csv-parser --save-dev
+npx cypress run
+
 ```
