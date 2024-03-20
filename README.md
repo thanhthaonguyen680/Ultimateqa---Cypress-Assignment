@@ -114,7 +114,6 @@ Options commands:
 ```javascript
 npm install @bahmutov/cypress-esbuild-preprocessor --save-dev
 ```
-```javascript
 ## 13. Run test report: 
 npx cypress run
 
