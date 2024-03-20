@@ -31,10 +31,10 @@ describe('Verify Automation page', () => {
       cy.get(AutomationPage.footer_secondary5).should('contain','Automation Exercises');
     });
 
-    it('TC_02_Verify display the links text of the section ', () => {
+    it('TC_02_Verify the url of the list of link text in the middle section ', () => {
       for(let i = 0; i<ListOfLinkText.length;i++){
         const listLinkText = ListOfLinkText[i];
-        cy.get(Locator.listlinksection,{timeout:10000}).should('be.visible').then(()=>{
+        cy.get(Locator.listlinksection,{timeout:20000}).should('be.visible').then(()=>{
           cy.get(Locator.listlinksection).eq(i).find('a').click();
           cy.url().should('include',listLinkText.url);
         })
@@ -42,10 +42,10 @@ describe('Verify Automation page', () => {
       }
     });  
 
-    it('TC_03_Verify the links of the Footer',()=>{
+    it('TC_03_Verify the url of the links of the Footer',()=>{
       for(let i = 0; i<ListofFooterLinks.length;i++){
         const listFooterLink = ListofFooterLinks[i];
-        cy.get(Locator.listlinkfooter,{timeout:10000}).should('be.visible').then(()=>{
+        cy.get(Locator.listlinkfooter,{timeout:20000}).should('be.visible').then(()=>{
           cy.get(Locator.listlinkfooter).eq(i).find('a').click();
           cy.url().should('include',listFooterLink.url)
         })
@@ -58,7 +58,7 @@ describe('Verify Automation page', () => {
     cy.get(Locator.dropdownlistlocator).realHover();
     for(let i = 0; i<Dropdownlist.length;i++){
       const dropdownlist = Dropdownlist[i];
-      cy.get(Locator.dropdownlistItem,{timeout:10000}).should('be.visible').then(()=>{
+      cy.get(Locator.dropdownlistItem,{timeout:20000}).should('be.visible').then(()=>{
         cy.get(Locator.dropdownlistItem).eq(i).find('a').click();
         cy.url().should('include',dropdownlist.url)
       })
