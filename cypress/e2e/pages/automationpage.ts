@@ -56,5 +56,5 @@ export const Locator = {
     listlinksection:'div.et_pb_text_inner > ul > li',
     listlinkfooter:'ul#menu-footer-main-menu > li',
     dropdownlistlocator: '#menu-item-218225',
-    dropdownlistItem: '#menu-main-menu > li:nth-child(2) > ul > li'
+    dropdownlistItem: '#menu-main-menu > li:nth-child(2) > ul > li',
 }
