@@ -69,7 +69,7 @@ Importance note: add the code  into tsconfig.json:
 ```javascript
 "types": ["cypress", "node", "@cypress/xpath"]
 ```
-## 10. Page oject model setup:
+## 10. Page Object model setup:
 Create file Selector as pages
 ```javascript
 export const AutomationPage = {
