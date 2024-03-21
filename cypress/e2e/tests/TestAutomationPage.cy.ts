@@ -1,4 +1,4 @@
-import {AutomationPage,ListOfLinkText,ListofFooterLinks,Locator, Dropdownlist} from "../pages/AutomationPage"
+import {AutomationPage,ListOfLinkText,ListofFooterLinks,Locator, Dropdownlist} from "../pages/automationpage"
 describe('Verify Automation page', () => {
   beforeEach("Open the website", () => {
       cy.visit("/")
