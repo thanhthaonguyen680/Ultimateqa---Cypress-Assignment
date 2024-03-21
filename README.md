@@ -82,7 +82,6 @@ export const AutomationPage = {
 ## 11. How to use Fixture file connection:
 
 ```
-```javascript
 ProjectRoot
     |__cypress
     |        |___ fixtures
