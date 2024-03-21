@@ -45,7 +45,7 @@ export const ListofFooterLinks = [
 ]
 export const Dropdownlist = [
     { url: 'https://courses.ultimateqa.com/collections' },
-    { url: 'https://academy.ultimateqa.com/inactive'},
+    { url: 'https://academy.ultimateqa.com/java-sdet'},
     { url: 'https://courses.ultimateqa.com/courses/selenium-with-c'},
     { url: 'https://ultimateqa.com/best-selenium-webdriver-resources/' },
     { url: 'https://ultimateqa.com/automation/'},
